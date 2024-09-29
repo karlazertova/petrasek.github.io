@@ -3,83 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Materials - Ing. Filip Petrásek, Ph.D.</title>
+    <title>Materials - Ing. Filip Petrásek, Ph.D.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
+        body, h1, h2, h3, h4, h5, h6, p, a, li, span, div, nav, footer, header {
+            font-family: 'Montserrat', sans-serif;
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
-            color: #3c3b3b;
+            color: #333333;
         }
-        header {
-            background-color: #6f4e37;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        <nav>
-    <a href="index.html">Domů (CZ)</a>
-    <a href="materials.html">Materiály ke Stažení (CZ)</a>
-    <a href="index_en.html">Home (EN)</a>
-    <a href="materials_en.html">Course Materials (EN)</a>
-</nav>
 
+        header {
+            background-color: #333333;
+            padding: 50px 0;
+            text-align: center;
+            color: #f1c232;
+        }
+        header img {
+            width: 150px;
+            border: 5px solid #f1c232;
+            border-radius: 50%;
+        }
+        header h1 {
+            margin: 20px 0 10px;
+            font-size: 3em;
+        }
 
         nav {
-            background-color: #8d6e63;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #ffffff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        .container {
-            padding: 20px 50px;
-        }
-        .materials {
-            background: #f7f7f7;
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #d1a882;
-        }
-        .materials a {
-            display: block;
-            margin: 10px 0;
-            color: #6f4e37;
-            text-decoration: none;
-        }
-        .materials a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background: #333333;
-            color: #ffffff;
+            background-color: #4f4f4f;
             text-align: center;
             padding: 15px 0;
+        }
+        nav a {
+            color: #f1c232;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .language-toggle {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #f1c232;
+        }
+
+        .container {
+            padding: 30px 50px;
+            margin: 30px auto;
+            background: #ffffff;
+            color: #333333;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            color: #333333;
+        }
+
+        footer {
+            background: #4f4f4f;
+            color: #f1c232;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Course Materials</h1>
-        <p>Ing. Filip Petrásek, Ph.D.</p>
+        <img src="logo.png" alt="Filip Petrásek Logo">
+        <h1>Materials for Download</h1>
+        <div class="language-toggle">
+            <a href="materials.html">🇨🇿 Čeština</a>
+        </div>
     </header>
 
     <nav>
         <a href="index_en.html">Home</a>
-        <a href="materials_en.html">Course Materials</a>
+        <a href="materials_en.html">Materials</a>
     </nav>
 
     <div class="container">
-        <section class="materials">
-            <h2>Course Materials for Download</h2>
-            <a href="#">Thermodynamics - Introduction (PDF)</a>
-            <a href="#">Quantum Physics - Quantum States (PDF)</a>
-            <a href="#">Physics Seminar - Discussion Questions (PDF)</a>
+        <section>
+            <h2>Available Materials</h2>
+            <ul>
+                <li><a href="#">Thermodynamics - Introduction (PDF)</a></li>
+                <li><a href="#">Quantum Physics - Quantum States (PDF)</a></li>
+                <li><a href="#">Physics Seminar - Discussion Questions (PDF)</a></li>
+            </ul>
         </section>
     </div>
 
