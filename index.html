@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Ing. Filip Petrásek, Ph.D. - Teoretický fyzik</title>
     <!-- Include Montserrat Font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,78 +12,77 @@
         body, h1, h2, h3, h4, h5, h6, p, a, li, span, div, nav, footer, header {
             font-family: 'Montserrat', sans-serif; /* Apply Montserrat globally */
         }
-    </style>
 
-    <title>Ing. Filip Petrásek, Ph.D. - Teoretický fyzik</title>
-    <style>
-        /* Globální styl stránky */
         body {
-            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
             margin: 0;
             padding: 0;
-            background-color: #ffffff; /* Bílá barva pro pozadí */
-            color: #333333; /* Normální text v černé barvě */
+            color: #333333;
         }
 
-        /* Styl pro hlavičku */
         header {
-            background-color: #333333; /* Tmavě šedá barva pro horní sekci */
+            background-color: #333333;
             padding: 50px 0;
             text-align: center;
-            color: #f1c232; /* Zlatá barva pro text v hlavičce */
+            color: #f1c232;
             position: relative;
         }
         header img {
-            width: 150px; /* Šířka loga */
-            border: 5px solid #f1c232; /* Zlaté orámování obrázku */
-            border-radius: 50%; /* Kulatý obrázek */
+            width: 150px;
+            border: 5px solid #f1c232;
+            border-radius: 50%;
         }
         header h1 {
             margin: 20px 0 10px;
             font-size: 3em;
-            color: #f1c232; /* Zlatý text pro jméno */
-        }
-        header p {
-            font-size: 1.3em;
-            font-weight: 300;
         }
 
-        /* Navigační menu */
         nav {
-            background-color: #4f4f4f; /* Hluboká šedá */
+            background-color: #4f4f4f;
             text-align: center;
             padding: 15px 0;
         }
         nav a {
-            color: #f1c232; /* Zlatý text pro odkazy */
+            color: #f1c232;
             margin: 0 20px;
             text-decoration: none;
             font-size: 1.2em;
             text-transform: uppercase;
-            transition: color 0.3s ease;
         }
         nav a:hover {
-            color: #ffffff; /* Bílá při najetí myší */
+            color: #ffffff;
         }
 
-        /* Hlavní obsah */
+        .language-toggle {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #f1c232;
+        }
+
         .container {
             padding: 30px 50px;
             margin: 30px auto;
-            background: #ffffff; /* Bílý box */
-            color: #333333; /* Standardní černý text */
+            background: #ffffff;
+            color: #333333;
             border-radius: 10px;
             max-width: 800px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Jemný stín pro box */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
         .container h2 {
-            color: #333333; /* Černý text pro nadpisy */
+            color: #333333;
         }
 
-        /* Patička */
+        .intro-img {
+            float: left;
+            margin: 0 20px 20px 0;
+            border-radius: 10px;
+            width: 200px;
+        }
+
         footer {
-            background: #4f4f4f; /* Tmavší šedá */
-            color: #f1c232; /* Zlatý text */
+            background: #4f4f4f;
+            color: #f1c232;
             text-align: center;
             padding: 20px 0;
             margin-top: 40px;
@@ -94,33 +93,35 @@
     </style>
 </head>
 <body>
-
     <!-- Hlavička stránky -->
     <header>
-        <img src="logo.png" alt="Filip Petrásek Logo"> <!-- Nahraďte 'your-logo.png' vlastním logem -->
+        <img src="logo.png" alt="Filip Petrásek Logo"> <!-- Nahraďte 'logo.png' obrázkem loga -->
         <h1>Ing. Filip Petrásek, Ph.D.</h1>
         <p>Teoretický fyzik a výzkumník</p>
+        <!-- Jazykové přepínání -->
+        <div class="language-toggle">
+            <a href="index_en.html">🇬🇧 English</a>
+        </div>
     </header>
 
     <!-- Navigační menu -->
     <nav>
-        <a href="index.html">Domů (CZ)</a>
-        <a href="materials.html">Materiály ke Stažení (CZ)</a>
-        <a href="index_en.html">Home (EN)</a>
-        <a href="materials_en.html">Course Materials (EN)</a>
+        <a href="index.html">Domů</a>
+        <a href="materials.html">Materiály</a>
     </nav>
 
     <!-- Hlavní obsah -->
     <div class="container">
         <section>
             <h2>O Filipovi</h2>
+            <img src="filip.jpg" alt="Filip Petrásek" class="intro-img"> <!-- Nahraďte 'filip.jpg' obrázkem Filipa -->
             <p>Ing. Filip Petrásek, Ph.D., je teoretický fyzik, který vystudoval Fakultu jaderné a fyzikálně inženýrské na ČVUT v Praze. Jeho zaměřením je matematická fyzika, konkrétně teorie strun. V současnosti působí jako přednášející na této fakultě, kde vyučuje Termodynamiku a Kvantovou fyziku, a vede Fyzikální seminář. Ve své vědecké práci se zaměřuje na nové teoretické přístupy v oblasti teorie strun a základních struktur hmoty.</p>
             <p>Ve volném čase rád navštěvuje svůj vinný sklípek na Moravě, spojuje a cestuje po krásách střední Evropy.</p>
         </section>
 
         <section>
             <h2>Životopis</h2>
-            <p>Filip se narodil v roce 1990. Po absolvování gymnázia v Poličce se rozhodl věnovat studiu fyziky na ČVUT v Praze. V roce 20ěé získal titul Ph.D. v oboru matematická fyzika. Od té doby působí jako vědecký pracovník a pedagog na Fakultě jaderné a fyzikálně inženýrské v Praze.</p>
+            <p>Filip se narodil v roce 1990. Po absolvování gymnázia v Poličce se rozhodl věnovat studiu fyziky na ČVUT v Praze. V roce 2012 získal titul Ph.D. v oboru matematická fyzika. Od té doby působí jako vědecký pracovník a pedagog na Fakultě jaderné a fyzikálně inženýrské v Praze.</p>
         </section>
 
         <section>
@@ -137,7 +138,5 @@
     <footer>
         <p>&copy; 2024 Filip Petrásek | Všechna práva vyhrazena</p>
     </footer>
-
 </body>
 </html>
-
