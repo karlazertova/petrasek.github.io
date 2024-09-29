@@ -5,40 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ing. Filip Petrásek, Ph.D. - Teoretický fyzik</title>
     <style>
+        /* Vzhled pro celé tělo stránky */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #ffffff;
+            background-color: #000000; /* Černá pozadí */
+            color: #f1c232; /* Zlatá pro text */
         }
+
+        /* Stylování hlavičky */
         header {
-            background-color: #333333;
-            padding: 20px 0;
+            background: url('background-top.jpg') no-repeat center center; /* Obrázek v pozadí */
+            background-size: cover;
             text-align: center;
+            padding: 100px 0;
+            color: #f1c232; /* Zlatá barva textu */
+            position: relative;
         }
+
         header h1 {
+            font-size: 4em;
             margin: 0;
-            font-size: 3em;
             font-family: 'Georgia', serif;
-            color: #f1c232; /* Zlatá */
         }
+
         header p {
-            margin: 0;
             font-size: 1.2em;
-            color: #ffffff;
+            font-style: italic;
+        }
+
+        /* Průhledná vrstva pro lepší čitelnost nad obrázkem */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Černý průhledný překryv */
+            z-index: -1;
         }
 
         /* Navigační menu */
         nav {
-            background-color: #000000; /* Černá */
+            background-color: #333333; /* Tmavší černá */
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
         }
         nav a {
-            color: #f1c232; /* Zlatá */
-            margin: 0 15px;
+            color: #f1c232; /* Zlaté odkazy */
+            margin: 0 20px;
             text-decoration: none;
             font-size: 1.2em;
             font-weight: bold;
@@ -46,21 +62,26 @@
             transition: color 0.3s ease;
         }
         nav a:hover {
-            color: #ffffff; /* Bílá při najetí */
+            color: #ffffff; /* Bílá při najetí myší */
         }
 
+        /* Hlavní obsah */
         .container {
-            padding: 20px 50px;
-            background: rgba(0, 0, 0, 0.7); /* Průhledný černý box */
-            border-radius: 8px;
-            margin: 20px;
+            padding: 30px 50px;
+            margin: 30px auto;
+            background: #111111; /* Černý box */
+            color: #f1c232; /* Zlatý text */
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
 
+        /* Patička */
         footer {
-            background: #000000; /* Černá */
-            color: #f1c232; /* Zlatá */
+            background: #111111; /* Tmavá černá */
+            color: #f1c232;
             text-align: center;
-            padding: 15px 0;
+            padding: 20px 0;
         }
         footer p {
             margin: 0;
@@ -68,8 +89,10 @@
     </style>
 </head>
 <body>
-    <!-- Hlavička stránky -->
+
+    <!-- Hlavička stránky s pozadím -->
     <header>
+        <div class="overlay"></div> <!-- Průhledná vrstva nad obrázkem -->
         <h1>Ing. Filip Petrásek, Ph.D.</h1>
         <p>Teoretický fyzik a výzkumník</p>
     </header>
@@ -87,6 +110,21 @@
         <section>
             <h2>O Filipovi</h2>
             <p>Ing. Filip Petrásek, Ph.D. je teoretický fyzik, který vystudoval Fakulty jaderné a fyzikálně inženýrské na ČVUT v Praze. Jeho zaměřením je matematická fyzika, konkrétně teorie strun. V současnosti působí jako přednášející na této fakultě, kde vyučuje Termodynamiku a Kvantovou fyziku, a vede Fyzikální seminář. Ve své vědecké práci se zaměřuje na nové teoretické přístupy v oblasti teorie strun a základních struktur hmoty.</p>
+            <p>Ve volném čase rád navštěvuje svůj vinný sklípek na Moravě, spojuje a cestuje po krásách střední Evropy.</p>
+        </section>
+
+        <section>
+            <h2>Životopis</h2>
+            <p>Filip se narodil v roce 1985. Po absolvování gymnázia v Brně se rozhodl věnovat studiu fyziky na ČVUT v Praze. V roce 2012 získal titul Ph.D. v oboru matematická fyzika. Od té doby působí jako vědecký pracovník a pedagog na Fakultě jaderné a fyzikálně inženýrské v Praze.</p>
+        </section>
+
+        <section>
+            <h2>Publikace</h2>
+            <ul>
+                <li><strong>Teorie strun a její aplikace</strong> - ČVUT Press, 2014</li>
+                <li><strong>Nové přístupy k dynamice částic</strong> - Journal of Mathematical Physics, 2018</li>
+                <li><strong>Stun v kvantové gravitaci</strong> - Physics Review D, 2020</li>
+            </ul>
         </section>
     </div>
 
@@ -96,4 +134,3 @@
     </footer>
 </body>
 </html>
-
